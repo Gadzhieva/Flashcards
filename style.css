@@ -1,0 +1,64 @@
+body {
+    background-image: url("https://img.freepik.com/premium-vector/continuous-single-line-world-earth-globe-one-line-drawing-world-map-vector-illustration-minimalist-design-minimalism-isolated-white-background-global-network-connection_37925-1853.jpg?w=2000");
+    background-size: cover;
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 45em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.card {
+    min-width: 10em;
+    min-height: 10em;
+    margin: 1em;
+    position: relative;
+    color: #14213d;
+    display: flex;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.front {
+    background: #fca311;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: #e5e5e5;
+    z-index: 1;
+    transform: rotateY(180deg);
+
+}
+
+.card:hover
+{
+    transform: rotateY(180deg);
+}
+
+h1 {
+    text-align: center;
+}
